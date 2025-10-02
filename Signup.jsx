@@ -69,7 +69,7 @@ const Signup = () => {
   return (
     <>
       <div className='flex justify-between items-center mx-6 mt-3'>
-        <img src="src/assets/notes logo.png" alt="logo" className='w-16 h-16 rounded-full cursor-pointer' onClick={() => navigate("/")} />
+        <img src="public/notes logo.png" alt="logo" className='w-16 h-16 rounded-full cursor-pointer' onClick={() => navigate("/")} />
         <div className='space-x-4'>
           <button type='button' className='bg-green-500 py-2 px-3 text-white font-medium rounded-md shadow-2xl cursor-pointer hover:bg-green-800' onClick={() => navigate("/login")} >login</button>
         </div>

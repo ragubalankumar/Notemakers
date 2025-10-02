@@ -7,7 +7,7 @@ import Sidebar from "../UI/Sidebar";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import VideoCapture from "./VideoCapture";
+import VideoCapture from "./VideoCapture.jsx";
 
 const BASE_URL = "http://localhost:5001";
 
@@ -121,7 +121,7 @@ const Notes = () => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <div className="flex-1 overflow-y-auto p-4 sm:p-6">
         <button
-          className="flex items-center gap-2 bg-slate-200 p-2 rounded-md mb-4 w-full sm:w-auto cursor-pointer"
+          className="flex items-center gap-2 bg-slate-200 p-2 rounded-md mb-4 w-full sm:w-auto"
           onClick={() => openModal()}
         >
           <Plus size={18} /> Add new note
@@ -133,7 +133,7 @@ const Notes = () => {
             <div className="bg-gray-100 px-4 py-6 sm:px-6 sm:py-8 rounded-lg shadow-md w-full sm:w-3/4 md:w-2/3 lg:w-1/2 max-h-[90vh] overflow-y-auto">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
                 <ul><li className="bg-slate-200 p-2 rounded-md">Notes</li></ul>
-                <button className="bg-green-700 py-2 px-4 rounded-md text-white cursor-pointer" onClick={openSaveModal}>Save</button>
+                <button className="bg-green-700 py-2 px-4 rounded-md text-white" onClick={openSaveModal}>Save</button>
               </div>
 
               <div className="flex flex-col gap-4">
@@ -196,8 +196,8 @@ const Notes = () => {
             <div className="bg-white p-6 rounded-md shadow-lg w-11/12 sm:w-96 text-center">
               <p className="text-lg font-semibold mb-4">Do you want to save this note?</p>
               <div className="flex justify-center gap-6 flex-wrap">
-                <button className="bg-green-700 py-2 px-4 rounded-md text-white cursor-pointer" onClick={confirmSave}>Save</button>
-                <button className="bg-red-600 py-2 px-4 rounded-md text-white cursor-pointer" onClick={cancelSave}>Cancel</button>
+                <button className="bg-green-700 py-2 px-4 rounded-md text-white" onClick={confirmSave}>Save</button>
+                <button className="bg-red-600 py-2 px-4 rounded-md text-white" onClick={cancelSave}>Cancel</button>
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Notesapp = () => {
 
         <div className="mt-10">
           <img
-            src="src/assets/notes_comic.png"
+            src="public/notes_comic.png"
             alt="comic_img"
             className="h-40 w-full object-cover rounded-md"
           />

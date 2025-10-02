@@ -58,7 +58,7 @@ const Login = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-center mx-4 sm:mx-6 mt-4 gap-4 sm:gap-0">
         <img
-          src="src/assets/notes logo.png"
+          src="public/notes logo.png"
           alt="logo"
           className="w-16 h-16 rounded-full cursor-pointer"
           onClick={() => navigate("/")}

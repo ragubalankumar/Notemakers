@@ -8,7 +8,7 @@ const Home = () => {
       {/* Header */}
       <div className='flex flex-col sm:flex-row justify-between items-center mx-4 sm:mx-6 mt-3 gap-3 sm:gap-0'>
         <img 
-          src="src/assets/notes logo.png" 
+          src="public/notes logo.png" 
           alt="logo" 
           className='w-16 h-16 rounded-full cursor-pointer'
           onClick={() => navigate("/")} 
@@ -42,7 +42,7 @@ const Home = () => {
       <div className="bg-green-700 mx-4 sm:mx-20 rounded-md py-10 mt-10">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 px-4 sm:px-0">
           <img
-            src="src/assets/notes-1.png"
+            src="public/notes-1.png"
             alt="Notebook"
             className="w-full sm:w-80 h-64 sm:h-96 object-cover rounded-lg shadow-lg"
           />
@@ -69,7 +69,7 @@ const Home = () => {
       {/* Footer */}
       <div className='bg-green-700 mt-10'>
         <div className='flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-10 py-10 text-white px-3'>
-          <img src="src/assets/notes logo.png" alt="logo" className='w-16 h-16 rounded-full'/>
+          <img src="public/notes logo.png" alt="logo" className='w-16 h-16 rounded-full'/>
           <p>copyrights @&copy; 2025</p>
           <p>contact notemaker</p>
         </div>
