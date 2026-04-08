@@ -7,7 +7,7 @@ import Sidebar from "../UI/Sidebar";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import VideoCapture from "./VideoCapture.jsx";
+import VideoCapture from "./src/Pages/Videocapture";
 
 const BASE_URL = "http://localhost:5001";
 
@@ -169,6 +169,7 @@ const Notes = () => {
                     }}
                     onClose={() => setShowVideoCapture(false)}
                   />
+                  
                 )}
 
                 <div
