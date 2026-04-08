@@ -7,7 +7,7 @@ import Sidebar from "../UI/Sidebar";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import VideoCapture from "./src/Pages/Videocapture";
+import VideoCapture from "./src/Pages/VideoCapture";
 
 const BASE_URL = "http://localhost:5001";
 
